@@ -14,7 +14,7 @@ public class Worker {
     private final List<Integer> ratings = new ArrayList<>();
     private double averageRating = 0.0;
 
-    private boolean isNewWorker; // علشان نعرف إذا لازم نعرض "new" إيموجي
+    private boolean isNewWorker;
 
     public Worker(String name, String phone, String serviceType, double price, int experienceYears, boolean isNewWorker) {
         this.name = name;

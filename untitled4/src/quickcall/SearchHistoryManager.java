@@ -8,7 +8,6 @@ public class SearchHistoryManager {
     private final LinkedList<String> history = new LinkedList<>();
 
     public void add(String term) {
-        // لا تضيف مصطلح جديد إذا كان موجود أصلاً، لكن اجعله يظهر كأحدث بحث
         if (history.contains(term)) {
             history.remove(term);
         }

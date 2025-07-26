@@ -30,7 +30,6 @@ public class Main {
         boolean loaded = loadUser();
 
         if (!loaded) {
-            // لو ما تم تحميل حساب محفوظ أو رفض المستخدم الحساب المحفوظ
             String userName;
             while (true) {
                 System.out.print("Enter your name: ");
@@ -41,7 +40,6 @@ public class Main {
 
             System.out.print("Enter your phone number: ");
             String phone = sc.nextLine().trim();
-// كرر لحد ما المستخدم يدخل رقم مكوّن من 10 أرقام
             while (!phone.matches("\\d{10}")) {
                 System.out.println("❌ Invalid phone number. Please enter exactly 10 digits.");
                 System.out.print("Enter your phone number: ");
